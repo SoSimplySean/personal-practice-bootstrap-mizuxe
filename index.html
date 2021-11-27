@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="./styles/css/bootstrap-utilities.css" />
     <link rel="stylesheet" href="./styles/css/bootstrap.css" />
     <link rel="stylesheet" href="./styles/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
     <title>Bootstrap - Mizuxe</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
       <div class="container">
-        <a href="#home" class="navbar-brand">
+        <a href="#showcase" class="navbar-brand">
           <img src="./img/mlogo.png" width="50" height="50" alt="" />
           <h3 class="d-inline align-middle">Mizuxe</h3>
         </a>
@@ -28,7 +32,7 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="navbar-nav" style="margin-left: auto">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -46,21 +50,20 @@
 
     <!-- SHOWCASE -->
 
-    <section id="showcase" class="py-5">
-      <div class="primary-overlay text-white"></div>
+    <section id="showcase" class="d-flex align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 text-center">
-            <h1 class="display-2 mt-5 pt-5">Do What You Dream Of...</h1>
+          <div class="col-lg-6 text-center align-self-center text-white">
+            <h1 class="display-1">Do What You Dream Of...</h1>
             <p class="lead">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim,
               sequi!
             </p>
             <a href="#" class="btn btn-outline-secondary btn-lg text-white"
-              >Read More</a
+              ><i class="bi bi-arrow-right-circle-fill me-2"></i>Read More</a
             >
           </div>
-          <div class="col-lg-6" style="background-color: red">
+          <div class="col-lg-6">
             <img
               src="./img/book.png"
               alt=""
@@ -91,8 +94,8 @@
               class="form-control form-control-lg mb-resp"
             />
           </div>
-          <div class="col-md-4">
-            <button class="btn btn-primary btn-lg btn-block">Subscribe</button>
+          <div class="col-md-4 d-grid">
+            <button class="btn btn-primary btn-lg text-white">Subscribe</button>
           </div>
         </div>
       </div>
@@ -166,7 +169,80 @@
             </div>
 
             <!-- ACCORDION -->
-            <div id="accordion">
+
+            <div class="accordion" id="accordionWhy">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                  >
+                    Get Inspired
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionWhy"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro, iure nobis quaerat molestiae voluptates ipsam aliquid
+                    amet sint quae suscipit?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                  >
+                    Get Motivated
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionWhy"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro, iure nobis quaerat molestiae voluptates ipsam aliquid
+                    amet sint quae suscipit?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                  >
+                    Get Strong
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionWhy"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro, iure nobis quaerat molestiae voluptates ipsam aliquid
+                    amet sint quae suscipit?
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div id="accordion">
               <div class="card">
                 <div class="card-header">
                   <h5 class="mb-0">
@@ -243,7 +319,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -282,13 +358,13 @@
                 </p>
                 <div class="d-flex justify-content-center">
                   <div class="p-4">
-                    <a href="">F</a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">T</a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">I</a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
                   </div>
                 </div>
               </div>
@@ -302,21 +378,21 @@
                   alt=""
                   class="img-fluid rounded-circle w-50 mb-3"
                 />
-                <h3>Susan Williams</h3>
-                <h5 class="text-muted">Lead Writer</h5>
+                <h3>Michelle Newman</h3>
+                <h5 class="text-muted">Chief Researcher</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                   asperiores blanditiis cumque facere necessitatibus tempora?
                 </p>
                 <div class="d-flex justify-content-center">
                   <div class="p-4">
-                    <a href="">F</a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">T</a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">I</a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
                   </div>
                 </div>
               </div>
@@ -330,21 +406,21 @@
                   alt=""
                   class="img-fluid rounded-circle w-50 mb-3"
                 />
-                <h3>Susan Williams</h3>
-                <h5 class="text-muted">Lead Writer</h5>
+                <h3>Michael Sheers</h3>
+                <h5 class="text-muted">Lead Editor</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                   asperiores blanditiis cumque facere necessitatibus tempora?
                 </p>
                 <div class="d-flex justify-content-center">
                   <div class="p-4">
-                    <a href="">F</a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">T</a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">I</a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
                   </div>
                 </div>
               </div>
@@ -358,21 +434,21 @@
                   alt=""
                   class="img-fluid rounded-circle w-50 mb-3"
                 />
-                <h3>Susan Williams</h3>
-                <h5 class="text-muted">Lead Writer</h5>
+                <h3>Lincoln Tan</h3>
+                <h5 class="text-muted">Journalist</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
                   asperiores blanditiis cumque facere necessitatibus tempora?
                 </p>
                 <div class="d-flex justify-content-center">
                   <div class="p-4">
-                    <a href="">F</a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">T</a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
                   </div>
                   <div class="p-4">
-                    <a href="">I</a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
                   </div>
                 </div>
               </div>
@@ -384,7 +460,7 @@
 
     <!-- CONTACT -->
 
-    <section class="bg-light py-5">
+    <section class="bg-light py-5" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
@@ -395,6 +471,30 @@
             </p>
             <form action="">
               <div class="input-group input-group-lg mb-3">
+                <span class="input-group-text"
+                  ><i class="bi bi-person-circle"></i
+                ></span>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope-fill"></i
+                ></span>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="input-group input-group-lg mb-3">
+                <span class="input-group-text"
+                  ><i class="bi bi-card-text"></i
+                ></span>
+                <textarea
+                  name=""
+                  class="form-control"
+                  id=""
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <!-- <div class="input-group input-group-lg mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"> C </span>
                 </div>
@@ -415,11 +515,11 @@
                   placeholder="Message"
                   rows="5"
                 ></textarea>
-              </div>
+              </div>  -->
               <input
                 type="submit"
                 value="Submit"
-                class="btn btn-primary btn-block btn-lg"
+                class="btn btn-primary btn-block btn-lg text-white"
               />
             </form>
           </div>
@@ -435,10 +535,8 @@
 
     <footer id="main-footer" class="py-5 bg-primary text-white">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-md-6 ml-auto">
-            <p class="lead">Copyright &copy; 2021</p>
-          </div>
+        <div class="row">
+          <p class="lead text-md-end text-center">Copyright &copy; 2021</p>
         </div>
       </div>
     </footer>
